@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SplineScene from "./Forms/SplineScene-Greninjia";
 import LoginForm from "./Forms/LoginForm";
 import style from "styled-components";
-import Loader from "./Loader";
+import Loader from "./Loader/Loader";
 
 // const SplineScene = React.lazy(() => import("./Forms/SplineScene-Greninjia"));
 
