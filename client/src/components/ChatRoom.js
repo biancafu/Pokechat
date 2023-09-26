@@ -2,15 +2,15 @@ import Spline from "@splinetool/react-spline";
 import styled from "styled-components";
 import { React, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Chatbox from "./ChatBox";
-import FriendList from "./FriendList";
-import Navbar from "./Nav";
-import Settings from "./Settings";
-import Volume from "./Volume";
+import Chatbox from "./ChatBox/ChatBox";
+import FriendList from "./FriendList/FriendList";
+import Navbar from "./Navbar/Nav";
+import Settings from "./Settings/Settings";
+import Volume from "./Volume/Volume";
 import Music from "./Musicplayer/App";
 import GengarPlay from "./GengarPlay";
-import GameMenu from "./GameMenu";
-import Loader from "./Loader";
+import GameMenu from "./GameMenu/GameMenu";
+import Loader from "./Loader/Loader";
 import AR from "./AR/AR";
 
 export default function ChatRoom(props) {

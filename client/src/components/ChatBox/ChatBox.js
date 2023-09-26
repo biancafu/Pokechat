@@ -1,8 +1,8 @@
 import { useEffect, useState, useContext } from "react";
-import { authContext } from '../providers/AuthProvider';
+import { authContext } from '../../providers/AuthProvider';
 import io from 'socket.io-client';
 import styled from "styled-components";
-import FriendList from "./FriendList";
+import FriendList from "../FriendList/FriendList";
 import './chatbox.css';
 
 export default function Chatbox(props) {

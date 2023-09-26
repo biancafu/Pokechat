@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "./lobby.css"
-import Navbar from "../Nav";
-import Chatbox from "../ChatBox";
+import Navbar from "../Navbar/Nav";
+import Chatbox from "../ChatBox/ChatBox";
 import Music from "../Musicplayer/App";
-import GameMenu from "../GameMenu";
+import GameMenu from "../GameMenu/GameMenu";
 import AR from "../AR/AR";
-import Settings from "../Settings";
+import Settings from "../Settings/Settings";
 
 
 export default function Lobby(props) {
