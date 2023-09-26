@@ -1,5 +1,4 @@
-import { useEffect, useState, useContext } from "react";
-import { authContext } from '../../providers/AuthProvider';
+import { useEffect, useState } from "react";
 import io from 'socket.io-client';
 import styled from "styled-components";
 import FriendList from "../FriendList/FriendList";
