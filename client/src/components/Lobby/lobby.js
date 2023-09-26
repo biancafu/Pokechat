@@ -125,10 +125,10 @@ export default function LobbyPage() {
   return (
       <Wrapperdiv>
         <LobbyContainer>
-        <Lobby />
+          <Lobby />
         </LobbyContainer>
         <SceneContainer>
-        <LobbyScene/>
+          <LobbyScene/>
         </SceneContainer>
       </Wrapperdiv>
   )
@@ -141,15 +141,21 @@ overflow:hiden;`;
 const LobbyContainer = styled.div`
 position: absolute;
 z-index: 1;
-height: 300px;
 width: 100vw;
-
-margin-top: 3%;
-align-item: center;`;
+align-item: center;
+top: 0;`;
+//margin-top: 3%;
 
 const SceneContainer = styled.div`
-position: relative;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
-  cursor: pointer;`;
+  position: relative;
+  top: 0;
+  left: 0;
+`
+  // overflow: hidden;
+  // position: relative;
+  // background-size: cover;
+  // width: 100vw;
+  // height: 100vh;
+  // cursor: pointer;

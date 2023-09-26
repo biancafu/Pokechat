@@ -62,9 +62,6 @@ export default function Lobby(props) {
         />
       
       <div className="lobby-room">
-        <div className="header">
-          {/* <h1>Chat Lobby Room</h1> */}
-        </div>
         <div className="room-list">
           <h2 className="available">Available Rooms:</h2>
           <ul>
@@ -84,9 +81,9 @@ export default function Lobby(props) {
           </form>
         </div>
       </div>
-      <ChatboxStyle>
-      <Chatbox room="lobby" friends={state.friends} user={JSON.parse(localStorage.getItem('token'))} />
-      </ChatboxStyle>
+      {/* <ChatboxStyle>
+        <Chatbox room="lobby" friends={state.friends} user={JSON.parse(localStorage.getItem('token'))} />
+      </ChatboxStyle> */}
       {/* {state.friends && <FriendList />} */}
       {state.settings && <Settings />}
       {state.music && <Music className="music-player" />}
@@ -107,7 +104,7 @@ export default function Lobby(props) {
   position: absolute;
   opacity: 0.85;
   z-index: 1;
-  bottom: -220%;
+
 
   &:hover {
     background: rgba(255, 255, 255, 0.6);
@@ -126,19 +123,15 @@ export default function Lobby(props) {
     font-family: Arial, sans-serif;
   }
 
-  // .lobby-room {
-  //   width: 80%;
-  //   margin: 0 auto;
-  //   background-color: #FFFFFF;
-  //   box-shadow: 0px 0px 10px #BDBDBD;
-  //   border-radius: 10px;
-  //   padding: 20px;
-  // }
+  .lobby-room {
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-  // .lobby-room h1 {
-  //   text-align: center;
-  //   font-size: 36px;
-  //   margin-`;
+  .lobby-room h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-`;
 
 
 
