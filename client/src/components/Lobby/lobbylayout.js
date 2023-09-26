@@ -4,6 +4,11 @@ import styled from "styled-components";
 import "./lobby.css"
 import Navbar from "../Nav";
 import Chatbox from "../ChatBox";
+import Music from "../Musicplayer/App";
+import GameMenu from "../GameMenu";
+import AR from "../AR/AR";
+import Settings from "../Settings";
+
 
 export default function Lobby(props) {
   const [rooms, setRooms] = useState([
@@ -82,6 +87,14 @@ export default function Lobby(props) {
       <ChatboxStyle>
       <Chatbox room="lobby" friends={state.friends} user={JSON.parse(localStorage.getItem('token'))} />
       </ChatboxStyle>
+      {/* {state.friends && <FriendList />} */}
+      {state.settings && <Settings />}
+      {state.music && <Music className="music-player" />}
+      {state.camera && <AR />}
+      {state.game && <GameMenu
+        onGame={() => {
+          setState({ ...state, game: !state.game })
+        }} />}
 
     </LobbyStyle>
   )};
